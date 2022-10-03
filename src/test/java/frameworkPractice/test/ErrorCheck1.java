@@ -14,7 +14,7 @@ public class ErrorCheck1 extends globalProperties{
 		public void submitOrder() throws IOException {
     	 
     	
-    	landingPage.loginApplication("a1ngel@gmail.com","Vongola26");
+    	landingPage.loginApplication("a1ngel@gmail.com","");
     	
     	Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
     	

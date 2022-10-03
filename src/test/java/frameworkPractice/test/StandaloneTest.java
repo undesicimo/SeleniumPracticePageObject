@@ -29,7 +29,7 @@ public class StandaloneTest {
     	String productName = "IPHONE 13 PRO";
     	//ログインする
     	driver.findElement(By.id("userEmail")).sendKeys("a1ngel0@gmail.com");
-    	driver.findElement(By.id("userPassword")).sendKeys("Vongola26");
+    	driver.findElement(By.id("userPassword")).sendKeys("");
     	driver.findElement(By.id("login")).click();
     	LandingPage landingPage = new LandingPage(driver);
     	List <WebElement> products = driver.findElements(By.cssSelector(".col-lg-4"));
