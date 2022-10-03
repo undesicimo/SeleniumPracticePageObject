@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import dev.failsafe.internal.util.Assert;
 import frameworkPratice.abstractActions.AbstractComponents;
 
 public class ConformationPage extends AbstractComponents{

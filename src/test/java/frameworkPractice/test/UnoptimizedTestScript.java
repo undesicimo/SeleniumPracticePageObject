@@ -3,21 +3,18 @@ package frameworkPractice.test;
 import java.time.Duration;
 import java.util.List;
 
-import org.asynchttpclient.util.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import frameworkPractice.pageobjects.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class StandaloneTest {
+public class UnoptimizedTestScript {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -28,8 +25,8 @@ public class StandaloneTest {
     	//対象商品
     	String productName = "IPHONE 13 PRO";
     	//ログインする
-    	driver.findElement(By.id("userEmail")).sendKeys("a1ngel0@gmail.com");
-    	driver.findElement(By.id("userPassword")).sendKeys("");
+    	driver.findElement(By.id("userEmail")).sendKeys("angel@gmail.com");
+    	driver.findElement(By.id("userPassword")).sendKeys("Aaaaaa26");
     	driver.findElement(By.id("login")).click();
     	LandingPage landingPage = new LandingPage(driver);
     	List <WebElement> products = driver.findElements(By.cssSelector(".col-lg-4"));

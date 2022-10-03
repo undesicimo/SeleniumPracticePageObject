@@ -8,16 +8,17 @@ import org.testng.annotations.Test;
 import frameworkPractice.pageobjects.CartPage;
 import frameworkPractice.pageobjects.CheckoutPage;
 import frameworkPractice.pageobjects.ConformationPage;
+import frameworkPractice.pageobjects.OrderPage;
 import frameworkPractice.pageobjects.ProductCatalogPage;
 import frameworkPractice.testComponents.globalProperties;
 
 public class StandaloneTest2 extends globalProperties{
-
+	String productName = "IPHONE 13 PRO";
 		
 		@Test
 		public void submitOrder() throws IOException {
-    	String productName = "IPHONE 13 PRO";    	
-    	ProductCatalogPage productCatalogPage = landingPage.loginApplication("a1ngel0@gmail.com","v");
+    	    	
+    	ProductCatalogPage productCatalogPage = landingPage.loginApplication("a1ngel0@gmail.com","Vongola26");
     	productCatalogPage.getItems();
     	productCatalogPage.getProductName(productName);  
     	productCatalogPage.addToCart(productName);
@@ -33,5 +34,15 @@ public class StandaloneTest2 extends globalProperties{
     	Assert.assertTrue(conformationMessage.trim().equalsIgnoreCase("Thankyou for the order."));
     		
 	}	
+		@Test(dependsOnMethods = {"submitOrder"} )
+		public void orderValidation()
+		{
+			ProductCatalogPage productCatalogPage = landingPage.loginApplication("a1ngel0@gmail.com","Vongola26");
+			OrderPage orderPage =productCatalogPage.goToOrdersPage();
+			Boolean checkOrderMatch = orderPage.nameColumnfind(productName);
+			Assert.assertTrue(checkOrderMatch);
+			
+			
+		}
 	
 }
