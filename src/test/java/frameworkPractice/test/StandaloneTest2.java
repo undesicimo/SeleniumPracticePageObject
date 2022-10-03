@@ -17,7 +17,7 @@ public class StandaloneTest2 extends globalProperties{
 		@Test
 		public void submitOrder() throws IOException {
     	String productName = "IPHONE 13 PRO";    	
-    	ProductCatalogPage productCatalogPage = landingPage.loginApplication("a1ngel0@gmail.com","");
+    	ProductCatalogPage productCatalogPage = landingPage.loginApplication("a1ngel0@gmail.com","v");
     	productCatalogPage.getItems();
     	productCatalogPage.getProductName(productName);  
     	productCatalogPage.addToCart(productName);
