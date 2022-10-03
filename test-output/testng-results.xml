@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-30T19:26:06 JST" name="Default suite" finished-at="2022-09-30T19:26:13 JST" duration-ms="7199">
+    <groups>
+    </groups>
+    <test started-at="2022-09-30T19:26:06 JST" name="Default test" finished-at="2022-09-30T19:26:13 JST" duration-ms="7199">
+      <class name="frameworkPractice.test.ErrorCheck1">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.ErrorCheck1@d86a6f]" started-at="2022-09-30T19:26:06 JST" name="launchBrowser" finished-at="2022-09-30T19:26:13 JST" duration-ms="6638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="submitOrder()[pri:0, instance:frameworkPractice.test.ErrorCheck1@d86a6f]" started-at="2022-09-30T19:26:13 JST" name="submitOrder" finished-at="2022-09-30T19:26:13 JST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.ErrorCheck1@d86a6f]" started-at="2022-09-30T19:26:13 JST" name="afterOperation" finished-at="2022-09-30T19:26:13 JST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterOperation -->
+      </class> <!-- frameworkPractice.test.ErrorCheck1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
