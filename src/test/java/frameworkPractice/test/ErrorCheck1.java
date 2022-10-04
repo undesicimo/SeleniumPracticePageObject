@@ -5,9 +5,9 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import frameworkPractice.testComponents.globalProperties;
+import frameworkPractice.testComponents.BaseTest;
 
-public class ErrorCheck1 extends globalProperties{
+public class ErrorCheck1 extends BaseTest{
 
 		
 		@Test(groups= {"ErrorHandling"})

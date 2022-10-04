@@ -1,10 +1,13 @@
 package frameworkPractice.test;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -14,9 +17,9 @@ import frameworkPractice.pageobjects.CheckoutPage;
 import frameworkPractice.pageobjects.ConformationPage;
 import frameworkPractice.pageobjects.OrderPage;
 import frameworkPractice.pageobjects.ProductCatalogPage;
-import frameworkPractice.testComponents.globalProperties;
+import frameworkPractice.testComponents.BaseTest;
 
-public class StandaloneTest2 extends globalProperties{
+public class StandaloneTest2 extends BaseTest{
 	
 		
 		@Test(dataProvider="getData" ,groups={"Purchase"})
@@ -50,6 +53,9 @@ public class StandaloneTest2 extends globalProperties{
 			
 			
 		}
+		
+		
+		
 		@DataProvider
 		public Object[][] getData() throws IOException
 		{
