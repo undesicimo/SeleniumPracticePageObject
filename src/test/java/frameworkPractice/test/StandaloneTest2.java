@@ -29,8 +29,8 @@ public class StandaloneTest2 extends globalProperties{
     	productCatalogPage.addToCart(input.get("product"));
     	Thread.sleep(5000);
     	CartPage cartPage =productCatalogPage.goToCart();
-    	//Boolean match = cartPage.matchCheck(productName);
-    	//Assert.assertTrue(match);
+    	Boolean match = cartPage.matchCheck(input.get("product"));
+    	Assert.assertTrue(match);
     	String countryName= "Japan";
     	CheckoutPage checkOutPage =cartPage.checkOut();
     	checkOutPage.selectCountry(countryName);
