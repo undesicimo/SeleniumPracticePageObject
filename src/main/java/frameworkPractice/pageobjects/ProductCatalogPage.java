@@ -43,10 +43,12 @@ public class ProductCatalogPage extends AbstractComponents{
 		WebElement prod = getProductName(productName);
 		prod.findElement(addToCart).click();
 		waitForElements(container);
-		waitforInvisibility(loadingIcon);
+		
 	}
 	public CartPage goToCart() 
 	{
+		waitforInvisibility(loadingIcon);
+		waitForWebElementToAppear(cartButton);
 		cartButton.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;

@@ -1,8 +1,12 @@
 package frameworkPractice.test;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import frameworkPractice.pageobjects.CartPage;
@@ -13,18 +17,19 @@ import frameworkPractice.pageobjects.ProductCatalogPage;
 import frameworkPractice.testComponents.globalProperties;
 
 public class StandaloneTest2 extends globalProperties{
-	String productName = "IPHONE 13 PRO";
+	
 		
-		@Test
-		public void submitOrder() throws IOException {
-    	    	
-    	ProductCatalogPage productCatalogPage = landingPage.loginApplication("angel@gmail.com","Aaaaaa26");
+		@Test(dataProvider="getData" ,groups={"Purchase"})
+		public void submitOrder(String email, String password, String productName) throws IOException {
+		
+    	ProductCatalogPage productCatalogPage = landingPage.loginApplication(email,password);
+    	
     	productCatalogPage.getItems();
     	productCatalogPage.getProductName(productName);  
     	productCatalogPage.addToCart(productName);
     	CartPage cartPage =productCatalogPage.goToCart();
-    	Boolean match = cartPage.matchCheck(productName);
-    	Assert.assertTrue(match);
+    	//Boolean match = cartPage.matchCheck(productName);
+    	//Assert.assertTrue(match);
     	String countryName= "Japan";
     	CheckoutPage checkOutPage =cartPage.checkOut();
     	checkOutPage.selectCountry(countryName);
@@ -35,14 +40,22 @@ public class StandaloneTest2 extends globalProperties{
     		
 	}	
 		@Test(dependsOnMethods = {"submitOrder"} )
-		public void orderValidation()
+		public void orderValidation(String productName)
 		{
-			ProductCatalogPage productCatalogPage = landingPage.loginApplication("a1ngel0@gmail.com","Vongola26");
+			ProductCatalogPage productCatalogPage = landingPage.loginApplication("angel@gmail.com","A1234567");
 			OrderPage orderPage =productCatalogPage.goToOrdersPage();
 			Boolean checkOrderMatch = orderPage.nameColumnfind(productName);
 			Assert.assertTrue(checkOrderMatch);
 			
 			
+		}
+		@DataProvider
+		public Object[][] getData() throws IOException
+		{
+		List <HashMap<String,String>> data= getJsonDataToMap(System.getProperty("user.dir")+
+				"git//SeleniumPracticePageObject//src//test//java//framePractice//data//data.json");
+		return new Object [][] {{data.get(0)},{data.get(1)}};
+		
 		}
 	
 }
