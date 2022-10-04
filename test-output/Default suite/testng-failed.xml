@@ -7,8 +7,7 @@
         <methods>
           <include name="afterOperation"/>
           <include name="launchBrowser"/>
-          <include name="submitOrder"/>
-          <include name="orderValidation"/>
+          <include name="submitOrder" invocation-numbers="1"/>
         </methods>
       </class> <!-- frameworkPractice.test.StandaloneTest2 -->
     </classes>

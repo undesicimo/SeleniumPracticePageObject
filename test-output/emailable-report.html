@@ -8,29 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Log in Error check</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9</td><td>Purchase</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Order number check</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31</td><td>Purchase</td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">40</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">78,487</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Order number check &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">frameworkPractice.test.StandaloneTest2</td><td><a href="#m0">submitOrder</a></td><td rowspan="1">1664862636570</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">frameworkPractice.test.StandaloneTest2</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1664864274713</td><td rowspan="2">17697</td></tr><tr class="passedeven"><td><a href="#m1">submitOrder</a></td></tr></tbody>
 </table>
-<h2>Log in Error check</h2><h2>Order number check</h2><h3 id="m0">frameworkPractice.test.StandaloneTest2#submitOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\JPZ4373\git\SeleniumPracticePageObjectgit\SeleniumPracticePageObject\src\test\java\framePractice\data\data.json (The system cannot find the path specified)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.FileNotFoundException: C:\Users\JPZ4373\git\SeleniumPracticePageObjectgit\SeleniumPracticePageObject\src\test\java\framePractice\data\data.json (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:2388)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:2506)
-	at frameworkPractice.testComponents.globalProperties.getJsonDataToMap(globalProperties.java:48)
-	at frameworkPractice.test.StandaloneTest2.getData(StandaloneTest2.java:55)
-	... 19 more
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">frameworkPractice.test.StandaloneTest2#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=A1234567, product=IPHONE 13 PRO, email=a1ngel0@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">frameworkPractice.test.StandaloneTest2#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=A1234567, product=ADIDAS ORIGINAL, email=angel@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

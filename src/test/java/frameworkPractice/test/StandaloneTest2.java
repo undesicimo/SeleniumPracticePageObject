@@ -20,13 +20,14 @@ public class StandaloneTest2 extends globalProperties{
 	
 		
 		@Test(dataProvider="getData" ,groups={"Purchase"})
-		public void submitOrder(String email, String password, String productName) throws IOException {
+		public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException {
 		
-    	ProductCatalogPage productCatalogPage = landingPage.loginApplication(email,password);
+    	ProductCatalogPage productCatalogPage = landingPage.loginApplication(input.get("email"),input.get("password"));
     	
     	productCatalogPage.getItems();
-    	productCatalogPage.getProductName(productName);  
-    	productCatalogPage.addToCart(productName);
+    	productCatalogPage.getProductName(input.get("product"));  
+    	productCatalogPage.addToCart(input.get("product"));
+    	Thread.sleep(5000);
     	CartPage cartPage =productCatalogPage.goToCart();
     	//Boolean match = cartPage.matchCheck(productName);
     	//Assert.assertTrue(match);
@@ -53,9 +54,9 @@ public class StandaloneTest2 extends globalProperties{
 		public Object[][] getData() throws IOException
 		{
 		List <HashMap<String,String>> data= getJsonDataToMap(System.getProperty("user.dir")+
-				"git//SeleniumPracticePageObject//src//test//java//framePractice//data//data.json");
+				"\\src\\test\\java\\framePractice\\data\\data.json");
 		return new Object [][] {{data.get(0)},{data.get(1)}};
 		
 		}
-	
+		
 }
