@@ -1,37 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-03T15:21:23 JST" name="Default suite" finished-at="2022-10-03T15:22:22 JST" duration-ms="59988">
+  <suite started-at="2022-10-03T17:28:53 JST" name="Suite" finished-at="2022-10-03T17:29:01 JST" duration-ms="7819">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorCheck1.submitOrder()[pri:0, instance:frameworkPractice.test.ErrorCheck1@302c971f]" name="submitOrder" class="frameworkPractice.test.ErrorCheck1"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2022-10-03T15:21:23 JST" name="Default test" finished-at="2022-10-03T15:22:22 JST" duration-ms="59988">
-      <class name="frameworkPractice.test.StandaloneTest2">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@3646a422]" started-at="2022-10-03T15:21:23 JST" name="launchBrowser" finished-at="2022-10-03T15:21:28 JST" duration-ms="5567" status="PASS">
+    <test started-at="2022-10-03T17:28:53 JST" name="Order number check" finished-at="2022-10-03T17:28:53 JST" duration-ms="17">
+    </test> <!-- Order number check -->
+    <test started-at="2022-10-03T17:28:53 JST" name="Log in Error check" finished-at="2022-10-03T17:29:01 JST" duration-ms="7819">
+      <class name="frameworkPractice.test.ErrorCheck1">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.ErrorCheck1@302c971f]" started-at="2022-10-03T17:28:53 JST" name="launchBrowser" finished-at="2022-10-03T17:29:00 JST" duration-ms="6893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="submitOrder()[pri:0, instance:frameworkPractice.test.StandaloneTest2@3646a422]" started-at="2022-10-03T15:21:28 JST" name="submitOrder" finished-at="2022-10-03T15:21:44 JST" duration-ms="16328" status="PASS">
+        <test-method signature="submitOrder()[pri:0, instance:frameworkPractice.test.ErrorCheck1@302c971f]" started-at="2022-10-03T17:29:00 JST" name="submitOrder" finished-at="2022-10-03T17:29:01 JST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@3646a422]" started-at="2022-10-03T15:21:44 JST" name="afterOperation" finished-at="2022-10-03T15:22:01 JST" duration-ms="16209" status="PASS">
+        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.ErrorCheck1@302c971f]" started-at="2022-10-03T17:29:01 JST" name="afterOperation" finished-at="2022-10-03T17:29:01 JST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@3646a422]" started-at="2022-10-03T15:22:01 JST" name="launchBrowser" finished-at="2022-10-03T15:22:05 JST" duration-ms="4717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="orderValidation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@3646a422]" started-at="2022-10-03T15:22:05 JST" name="orderValidation" finished-at="2022-10-03T15:22:06 JST" depends-on-methods="frameworkPractice.test.StandaloneTest2.submitOrder" duration-ms="894" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderValidation -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@3646a422]" started-at="2022-10-03T15:22:06 JST" name="afterOperation" finished-at="2022-10-03T15:22:22 JST" duration-ms="16237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-      </class> <!-- frameworkPractice.test.StandaloneTest2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- frameworkPractice.test.ErrorCheck1 -->
+    </test> <!-- Log in Error check -->
+  </suite> <!-- Suite -->
 </testng-results>

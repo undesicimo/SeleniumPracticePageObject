@@ -35,7 +35,7 @@ public class globalProperties {
 	driver.manage().window().maximize();
 	return driver;
 	}
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public LandingPage launchBrowser() throws IOException
 	{
 		driver = initializeWebDriver();
@@ -44,7 +44,7 @@ public class globalProperties {
 		return landingPage;
 		
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void afterOperation()
 	{
 		driver.close();

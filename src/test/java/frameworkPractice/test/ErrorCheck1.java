@@ -10,7 +10,7 @@ import frameworkPractice.testComponents.globalProperties;
 public class ErrorCheck1 extends globalProperties{
 
 		
-		@Test
+		@Test(groups= {"ErrorHandling"})
 		public void submitOrder() throws IOException {
     	 
     	
