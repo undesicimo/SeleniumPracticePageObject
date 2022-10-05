@@ -8,8 +8,8 @@
 		</run>
 	</groups>
 	<listeners>
-	<listener class-name="frameworkPractice.testComponents.Listeners"/>
-</listeners>
+		<listener class-name="frameworkPractice.testComponents.Listeners"/>
+	</listeners>
   <test thread-count="5" name="Order number check">
     <classes>
       <class name="frameworkPractice.test.StandaloneTest2"/>
