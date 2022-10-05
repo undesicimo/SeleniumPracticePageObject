@@ -11,12 +11,12 @@ public class ErrorCheck1 extends BaseTest{
 
 		
 		@Test(groups= {"ErrorHandling"})
-		public void submitOrder() throws IOException {
+		public void submitOrderError() throws IOException {
     	 
     	
     	landingPage.loginApplication("angel@gmail.com","Aaaaaa26");
     	
-    	Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+    	Assert.assertEquals("Incorrect email  password.", landingPage.getErrorMessage());
     	
     		
 	}	

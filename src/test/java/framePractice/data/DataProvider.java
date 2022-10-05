@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class DataProvider {
 	public List<HashMap<String, String>> getJsonDataToMap() throws IOException{
 	String jsonFile = FileUtils.readFileToString(new File(System.getProperty("user.dir")+
-			"git\\SeleniumPracticePageObject\\src\\test\\java\\framePractice\\data\\data.json"),
+			"\\git\\SeleniumPracticePageObject\\src\\test\\java\\framePractice\\data\\data.json"),
 			StandardCharsets.UTF_8);
 		
 		ObjectMapper mapper = new ObjectMapper();

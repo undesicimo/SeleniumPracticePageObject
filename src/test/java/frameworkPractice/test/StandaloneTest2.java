@@ -43,12 +43,12 @@ public class StandaloneTest2 extends BaseTest{
     	Assert.assertTrue(conformationMessage.trim().equalsIgnoreCase("Thankyou for the order."));
     		
 	}	
-		@Test(dependsOnMethods = {"submitOrder"} )
-		public void orderValidation(String productName)
+		@Test(dependsOnMethods = {"submitOrder"},groups= {"Error"},dataProvider="getData" )
+		public void orderValidation(HashMap<String,String> input)  throws IOException, InterruptedException
 		{
-			ProductCatalogPage productCatalogPage = landingPage.loginApplication("angel@gmail.com","A1234567");
+			ProductCatalogPage productCatalogPage = landingPage.loginApplication(input.get("email"),input.get("password"));
 			OrderPage orderPage =productCatalogPage.goToOrdersPage();
-			Boolean checkOrderMatch = orderPage.nameColumnfind(productName);
+			Boolean checkOrderMatch = orderPage.nameColumnfind(input.get("product"));
 			Assert.assertTrue(checkOrderMatch);
 			
 			
@@ -64,5 +64,5 @@ public class StandaloneTest2 extends BaseTest{
 		return new Object [][] {{data.get(0)},{data.get(1)}};
 		
 		}
-		
+	
 }

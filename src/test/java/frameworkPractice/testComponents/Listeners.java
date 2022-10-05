@@ -11,11 +11,11 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import ExtentReporter.ExtendReporterNG;
+import ExtentReporter.ExtentReporterNG;
 
 public class Listeners extends BaseTest implements ITestListener {
 	ExtentTest test;
-	 ExtentReports extent = ExtendReporterNG.getReportObject();
+	 ExtentReports extent = ExtentReporterNG.getReportObject();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -30,7 +30,7 @@ public class Listeners extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
+		 //TODO Auto-generated method stub
 		test.log(Status.FAIL, "失敗");
 		test.fail(result.getThrowable());
 		try {

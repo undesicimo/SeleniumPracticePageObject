@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="frameworkPractice.test.StandaloneTest2">
+      <class name="frameworkPractice.test.ErrorCheck1">
         <methods>
-          <include name="afterOperation"/>
           <include name="launchBrowser"/>
-          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="afterOperation"/>
+          <include name="submitOrderError"/>
         </methods>
-      </class> <!-- frameworkPractice.test.StandaloneTest2 -->
+      </class> <!-- frameworkPractice.test.ErrorCheck1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
