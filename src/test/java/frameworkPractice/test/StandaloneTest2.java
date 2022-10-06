@@ -30,7 +30,6 @@ public class StandaloneTest2 extends BaseTest{
     	productCatalogPage.getItems();
     	productCatalogPage.getProductName(input.get("product"));  
     	productCatalogPage.addToCart(input.get("product"));
-    	Thread.sleep(5000);
     	CartPage cartPage =productCatalogPage.goToCart();
     	Boolean match = cartPage.matchCheck(input.get("product"));
     	Assert.assertTrue(match);

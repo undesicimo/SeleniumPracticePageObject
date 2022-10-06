@@ -35,7 +35,8 @@ public class BaseTest {
 		Properties properties = new Properties();
 		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\java\\GlobalProperties\\global.properties");
 		properties.load(file);
-		String browserName = properties.getProperty("browser");
+		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") : properties.getProperty("browser");
+		// properties.getProperty("browser");
 	
 	if(browserName.equalsIgnoreCase("chrome"))
 	{

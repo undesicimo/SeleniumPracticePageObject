@@ -45,10 +45,9 @@ public class ProductCatalogPage extends AbstractComponents{
 		waitForElements(container);
 		
 	}
-	public CartPage goToCart() 
+	public CartPage goToCart() throws InterruptedException 
 	{
-		waitforInvisibility(loadingIcon);
-		waitForWebElementToAppear(cartButton);
+		Thread.sleep(3000);
 		cartButton.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;

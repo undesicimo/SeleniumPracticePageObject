@@ -6,11 +6,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import frameworkPractice.testComponents.BaseTest;
+import frameworkPractice.testComponents.Retry;
 
 public class ErrorCheck1 extends BaseTest{
 
 		
-		@Test(groups= {"ErrorHandling"})
+		@Test(groups= {"ErrorHandling"},retryAnalyzer = Retry.class)
 		public void submitOrderError() throws IOException {
     	 
     	
@@ -20,6 +21,8 @@ public class ErrorCheck1 extends BaseTest{
     	
     		
 	}	
+		
+		
 	
 }
        
