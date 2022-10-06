@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-05T17:55:44 JST" name="Suite" finished-at="2022-10-05T17:57:52 JST" duration-ms="128469">
+  <suite started-at="2022-10-06T11:36:35 JST" name="Suite" finished-at="2022-10-06T11:38:38 JST" duration-ms="122323">
     <groups>
       <group name="ErrorHandling">
         <method signature="ErrorCheck1.submitOrderError()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" name="submitOrderError" class="frameworkPractice.test.ErrorCheck1"/>
@@ -14,93 +14,13 @@
         <method signature="StandaloneTest2.orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" name="orderValidation" class="frameworkPractice.test.StandaloneTest2"/>
       </group> <!-- Error -->
     </groups>
-    <test started-at="2022-10-05T17:55:44 JST" name="Order number check" finished-at="2022-10-05T17:57:30 JST" duration-ms="106079">
-      <class name="frameworkPractice.test.StandaloneTest2">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:55:44 JST" name="launchBrowser" finished-at="2022-10-05T17:55:50 JST" duration-ms="5978" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:55:50 JST" name="submitOrder" data-provider="getData" finished-at="2022-10-05T17:56:08 JST" duration-ms="17651" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=A1234567, product=IPHONE 13 PRO, email=a1ngel0@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:56:08 JST" name="afterOperation" finished-at="2022-10-05T17:56:08 JST" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:56:08 JST" name="launchBrowser" finished-at="2022-10-05T17:56:12 JST" duration-ms="4698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:56:12 JST" name="submitOrder" data-provider="getData" finished-at="2022-10-05T17:56:30 JST" duration-ms="17652" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=A1234567, product=ADIDAS ORIGINAL, email=angel@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:56:30 JST" name="afterOperation" finished-at="2022-10-05T17:56:46 JST" duration-ms="16233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:56:46 JST" name="launchBrowser" finished-at="2022-10-05T17:56:51 JST" duration-ms="4665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:56:51 JST" name="orderValidation" data-provider="getData" finished-at="2022-10-05T17:56:52 JST" depends-on-methods="frameworkPractice.test.StandaloneTest2.submitOrder" duration-ms="873" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=A1234567, product=IPHONE 13 PRO, email=a1ngel0@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderValidation -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:56:52 JST" name="afterOperation" finished-at="2022-10-05T17:57:08 JST" duration-ms="16254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:57:08 JST" name="launchBrowser" finished-at="2022-10-05T17:57:13 JST" duration-ms="4725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:57:13 JST" name="orderValidation" data-provider="getData" finished-at="2022-10-05T17:57:14 JST" depends-on-methods="frameworkPractice.test.StandaloneTest2.submitOrder" duration-ms="858" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=A1234567, product=ADIDAS ORIGINAL, email=angel@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderValidation -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-05T17:57:14 JST" name="afterOperation" finished-at="2022-10-05T17:57:30 JST" duration-ms="16258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-      </class> <!-- frameworkPractice.test.StandaloneTest2 -->
-    </test> <!-- Order number check -->
-    <test started-at="2022-10-05T17:57:30 JST" name="Log in Error check" finished-at="2022-10-05T17:57:52 JST" duration-ms="22155">
+    <test started-at="2022-10-06T11:36:35 JST" name="Log in Error check" finished-at="2022-10-06T11:36:59 JST" duration-ms="23809">
       <class name="frameworkPractice.test.ErrorCheck1">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-05T17:57:30 JST" name="launchBrowser" finished-at="2022-10-05T17:57:35 JST" duration-ms="4623" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T11:36:36 JST" name="launchBrowser" finished-at="2022-10-06T11:36:42 JST" duration-ms="6174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="submitOrderError()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-05T17:57:35 JST" name="submitOrderError" finished-at="2022-10-05T17:57:35 JST" duration-ms="535" status="FAIL">
+        <test-method signature="submitOrderError()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T11:36:42 JST" name="submitOrderError" finished-at="2022-10-06T11:36:42 JST" duration-ms="581" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
@@ -130,29 +50,103 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:806)
 at org.testng.TestRunner.run(TestRunner.java:601)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderError -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-05T17:57:36 JST" name="afterOperation" finished-at="2022-10-05T17:57:52 JST" duration-ms="16238" status="PASS">
+        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T11:36:43 JST" name="afterOperation" finished-at="2022-10-06T11:36:59 JST" duration-ms="16238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterOperation -->
       </class> <!-- frameworkPractice.test.ErrorCheck1 -->
     </test> <!-- Log in Error check -->
+    <test started-at="2022-10-06T11:36:35 JST" name="Order number check" finished-at="2022-10-06T11:38:38 JST" duration-ms="122323">
+      <class name="frameworkPractice.test.StandaloneTest2">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:36:36 JST" name="launchBrowser" finished-at="2022-10-06T11:36:42 JST" duration-ms="6047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:36:42 JST" name="submitOrder" data-provider="getData" finished-at="2022-10-06T11:36:59 JST" duration-ms="17673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=A1234567, product=IPHONE 13 PRO, email=a1ngel0@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:36:59 JST" name="afterOperation" finished-at="2022-10-06T11:37:16 JST" duration-ms="16235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterOperation -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:37:16 JST" name="launchBrowser" finished-at="2022-10-06T11:37:21 JST" duration-ms="5041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:37:21 JST" name="submitOrder" data-provider="getData" finished-at="2022-10-06T11:37:38 JST" duration-ms="17623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=A1234567, product=ADIDAS ORIGINAL, email=angel@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:37:38 JST" name="afterOperation" finished-at="2022-10-06T11:37:55 JST" duration-ms="16211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterOperation -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:37:55 JST" name="launchBrowser" finished-at="2022-10-06T11:37:59 JST" duration-ms="4625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:37:59 JST" name="orderValidation" data-provider="getData" finished-at="2022-10-06T11:38:00 JST" depends-on-methods="frameworkPractice.test.StandaloneTest2.submitOrder" duration-ms="863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=A1234567, product=IPHONE 13 PRO, email=a1ngel0@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderValidation -->
+        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:38:00 JST" name="afterOperation" finished-at="2022-10-06T11:38:16 JST" duration-ms="16210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterOperation -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:38:16 JST" name="launchBrowser" finished-at="2022-10-06T11:38:21 JST" duration-ms="4481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:38:21 JST" name="orderValidation" data-provider="getData" finished-at="2022-10-06T11:38:22 JST" depends-on-methods="frameworkPractice.test.StandaloneTest2.submitOrder" duration-ms="894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=A1234567, product=ADIDAS ORIGINAL, email=angel@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderValidation -->
+        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T11:38:22 JST" name="afterOperation" finished-at="2022-10-06T11:38:38 JST" duration-ms="16189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterOperation -->
+      </class> <!-- frameworkPractice.test.StandaloneTest2 -->
+    </test> <!-- Order number check -->
   </suite> <!-- Suite -->
 </testng-results>
