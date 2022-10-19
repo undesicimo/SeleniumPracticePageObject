@@ -7,7 +7,6 @@ Page Object Framework practice
 
 
 JAVAプログラミング、セレクター周り、Selenium、TestNG、ページオブジェクトモデル、Jenkins基本機能、、GIT基本操作など
-
 の知識を取得することが出来ました。
 
 こちらのリポジトリでは、実際にページオブジェクトモデルを活用し、いくつかの検証パターンを書きました。
