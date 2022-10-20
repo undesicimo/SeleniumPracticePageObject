@@ -1,202 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-06T13:25:32 JST" name="Suite" finished-at="2022-10-06T13:27:08 JST" duration-ms="96168">
+  <suite started-at="2022-10-20T15:02:40 JST" name="Default suite" finished-at="2022-10-20T15:02:52 JST" duration-ms="11752">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorCheck1.submitOrderError()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" name="submitOrderError" class="frameworkPractice.test.ErrorCheck1"/>
-      </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="StandaloneTest2.submitOrder(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" name="submitOrder" class="frameworkPractice.test.StandaloneTest2"/>
-      </group> <!-- Purchase -->
-      <group name="Error">
-        <method signature="StandaloneTest2.orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" name="orderValidation" class="frameworkPractice.test.StandaloneTest2"/>
-      </group> <!-- Error -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@1750fbeb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-06T13:25:32 JST" name="Log in Error check" finished-at="2022-10-06T13:26:00 JST" duration-ms="28390">
-      <class name="frameworkPractice.test.ErrorCheck1">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T13:25:32 JST" name="launchBrowser" finished-at="2022-10-06T13:25:37 JST" duration-ms="5359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method retried="true" signature="submitOrderError()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T13:25:37 JST" name="submitOrderError" finished-at="2022-10-06T13:25:37 JST" duration-ms="535" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at frameworkPractice.test.ErrorCheck1.submitOrderError(ErrorCheck1.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrderError -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T13:25:37 JST" name="afterOperation" finished-at="2022-10-06T13:25:38 JST" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T13:25:38 JST" name="launchBrowser" finished-at="2022-10-06T13:25:42 JST" duration-ms="4741" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="submitOrderError()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T13:25:42 JST" name="submitOrderError" finished-at="2022-10-06T13:25:43 JST" duration-ms="618" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at frameworkPractice.test.ErrorCheck1.submitOrderError(ErrorCheck1.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrderError -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.ErrorCheck1@530712d]" started-at="2022-10-06T13:25:44 JST" name="afterOperation" finished-at="2022-10-06T13:26:00 JST" duration-ms="16206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-      </class> <!-- frameworkPractice.test.ErrorCheck1 -->
-    </test> <!-- Log in Error check -->
-    <test started-at="2022-10-06T13:25:32 JST" name="Order number check" finished-at="2022-10-06T13:27:08 JST" duration-ms="96168">
-      <class name="frameworkPractice.test.StandaloneTest2">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:25:32 JST" name="launchBrowser" finished-at="2022-10-06T13:25:37 JST" duration-ms="5557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:25:37 JST" name="submitOrder" data-provider="getData" finished-at="2022-10-06T13:25:42 JST" duration-ms="5083" status="PASS">
+    <test started-at="2022-10-20T15:02:40 JST" name="Default test" finished-at="2022-10-20T15:02:52 JST" duration-ms="11752">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@1750fbeb]" started-at="2022-10-20T15:02:40 JST" name="setUpClass" finished-at="2022-10-20T15:02:40 JST" duration-ms="360" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=A1234567, product=IPHONE 13 PRO, email=a1ngel0@gmail.com}]]>
+                <![CDATA[org.testng.TestRunner@510689af]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:25:42 JST" name="afterOperation" finished-at="2022-10-06T13:25:59 JST" duration-ms="16205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:25:59 JST" name="launchBrowser" finished-at="2022-10-06T13:26:03 JST" duration-ms="4606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:03 JST" name="submitOrder" data-provider="getData" finished-at="2022-10-06T13:26:08 JST" duration-ms="5058" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@1750fbeb]" started-at="2022-10-20T15:02:40 JST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-20T15:02:52 JST" duration-ms="11332" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=A1234567, product=ADIDAS ORIGINAL, email=angel@gmail.com}]]>
+                <![CDATA["Positive test of submitting order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:08 JST" name="afterOperation" finished-at="2022-10-06T13:26:24 JST" duration-ms="16213" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@1750fbeb]" started-at="2022-10-20T15:02:52 JST" name="tearDownClass" finished-at="2022-10-20T15:02:52 JST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:24 JST" name="launchBrowser" finished-at="2022-10-06T13:26:29 JST" duration-ms="4666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:29 JST" name="orderValidation" data-provider="getData" finished-at="2022-10-06T13:26:30 JST" depends-on-methods="frameworkPractice.test.StandaloneTest2.submitOrder" duration-ms="868" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=A1234567, product=IPHONE 13 PRO, email=a1ngel0@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderValidation -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:30 JST" name="afterOperation" finished-at="2022-10-06T13:26:46 JST" duration-ms="16228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:46 JST" name="launchBrowser" finished-at="2022-10-06T13:26:51 JST" duration-ms="4388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="orderValidation(java.util.HashMap)[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:51 JST" name="orderValidation" data-provider="getData" finished-at="2022-10-06T13:26:51 JST" depends-on-methods="frameworkPractice.test.StandaloneTest2.submitOrder" duration-ms="861" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=A1234567, product=ADIDAS ORIGINAL, email=angel@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderValidation -->
-        <test-method is-config="true" signature="afterOperation()[pri:0, instance:frameworkPractice.test.StandaloneTest2@2e1ef60]" started-at="2022-10-06T13:26:51 JST" name="afterOperation" finished-at="2022-10-06T13:27:08 JST" duration-ms="16220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterOperation -->
-      </class> <!-- frameworkPractice.test.StandaloneTest2 -->
-    </test> <!-- Order number check -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

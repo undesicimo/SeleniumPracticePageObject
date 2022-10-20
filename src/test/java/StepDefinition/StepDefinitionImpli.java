@@ -1,5 +1,7 @@
 package StepDefinition;
 
+
+
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -39,7 +41,7 @@ public class StepDefinitionImpli extends BaseTest {
         productCatalogPage.addToCart(product);
         cartPage =productCatalogPage.goToCart();
      }
-     @When ("^Checkout product (.+) and sumbit the order$")
+     @When ("^Checkout product (.+) and submit the order$")
      public void checkout_product_submit_order(String product)
      {
         Boolean match = cartPage.matchCheck(product);
